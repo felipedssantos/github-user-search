@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #ECEFF1;
+}
+
+/* Variaveis */
+$primary: #ac53f2;
+
+/* Mixn */
+@mixin transition($time) {
+  transition: all $time ease-in-out;
+}
+
+
+/* Login styles */
+@import 'pages/Login';
+
+/* Search User Styles */
+@import 'components/search-user';
+
+/* Main styles */
+@import 'pages/Main';

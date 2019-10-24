@@ -1,0 +1,85 @@
+.user-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .user-box {
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #00000015;
+
+    .user-profile {
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+
+      h2 {
+        font-size: 1.6em;
+        margin-top: 20px;
+        font-weight: 400;
+      }
+
+      h4 {
+        font-weight: 300;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-weight: 100;
+      }
+
+      .user-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+          margin-bottom: 10px;
+        }
+
+        [class*='icon-'] {
+          font-size: 20px;
+          margin-right: 5px;
+        }
+
+      }
+
+      
+
+    }
+
+    .repos-info {
+
+      h2 {
+        a {
+          color: $primary;
+          @include transition(300ms);
+          
+          &:hover {
+            color: darken($primary, 30%);
+            text-decoration: none;
+            @include transition(300ms);
+          }
+        }
+      }
+
+      p {
+        color: #888;
+        margin-bottom: 0;
+      }
+
+      p:last-child {
+        margin-bottom: 20px;
+      }
+
+    }
+
+  }
+
+}
